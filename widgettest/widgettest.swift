@@ -74,7 +74,7 @@ struct widgettestEntryView : View {
                             .background(.green)
                             .foregroundColor(.white)
                             .cornerRadius(8)
-                            .shadow(radius: 5, x: 0, y: 0)
+                            .shadow(radius: 6, x: 0, y: 0)
                     }
                 }.frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .top)
                     .padding()
