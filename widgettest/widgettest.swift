@@ -89,7 +89,7 @@ struct widgettestEntryView : View {
                         Text(singledata.title)
                             .frame(width: 130,height: 38, alignment: .center)
                             .padding(.leading, 8)
-                            .background(.red)
+                            .background(.pink)
                             .foregroundColor(.white)
                             .cornerRadius(8)
                             .shadow(radius: 5, x: 0, y: 0)
