@@ -18,7 +18,8 @@ struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(),datas: [TodoItem(id:UUID(), title: "", isCompleted: false)])
     }
-    //预览图
+    
+    // 预览图
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         let entry = SimpleEntry(date: Date(),datas: [TodoItem(id: UUID(), title: "", isCompleted: false),TodoItem(id: UUID(), title: "", isCompleted: false),TodoItem(id: UUID(), title: "", isCompleted: false),TodoItem(id: UUID(), title: "", isCompleted: false),TodoItem(id: UUID(), title: "", isCompleted: false)])
         completion(entry)
@@ -89,7 +90,7 @@ struct widgettestEntryView : View {
                         Text(singledata.title)
                             .frame(width: 130,height: 38, alignment: .center)
                             .padding(.leading, 8)
-                            .background(.red)
+                            .background(.pink)
                             .foregroundColor(.white)
                             .cornerRadius(8)
                             .shadow(radius: 5, x: 0, y: 0)
