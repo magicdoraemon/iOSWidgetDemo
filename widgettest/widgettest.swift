@@ -18,7 +18,8 @@ struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(),datas: [TodoItem(id:UUID(), title: "", isCompleted: false)])
     }
-    //预览图
+    
+    // 预览图
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         let entry = SimpleEntry(date: Date(),datas: [TodoItem(id: UUID(), title: "", isCompleted: false),TodoItem(id: UUID(), title: "", isCompleted: false),TodoItem(id: UUID(), title: "", isCompleted: false),TodoItem(id: UUID(), title: "", isCompleted: false),TodoItem(id: UUID(), title: "", isCompleted: false)])
         completion(entry)
